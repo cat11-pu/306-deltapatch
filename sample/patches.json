@@ -1,0 +1,13 @@
+{
+  "budget": 1,
+  "version_error_code": "E_BAD_VERSION",
+  "key_error_code": "E_NO_KEY",
+  "event_error_code": "E_BAD_EVENT",
+  "state": { "record": [["a", 1], ["b", 2]], "version": 0, "ledger": [], "applied": [] },
+  "events": [
+    { "id": 1, "kind": "patch", "version": 1, "ops": [["set", "c", 3]] },
+    { "id": 2, "kind": "patch", "version": 2, "ops": [["set", "b", 9]] },
+    { "id": 3, "kind": "patch", "version": 3, "ops": [["unset", "a"]] },
+    { "id": 4, "kind": "patch", "version": 4, "ops": [["set", "c", 5]] }
+  ]
+}
